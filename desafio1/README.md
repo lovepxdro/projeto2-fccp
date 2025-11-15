@@ -27,7 +27,7 @@ A solução foi dividida em dois serviços independentes, cada um com seu própr
 
 ## Como executar
 
-Antes de executar os comandos, certifique-se de estar dentro da pasta `desafio1`. Além disso, para quem for executar em ambiente `Windows` pode acontecer do formato do arquivo `start.sh` **não** esteja em **LF**, você pode verificar e alterar isso dentro do arquivo no canto inferior direito.
+Antes de executar os comandos, certifique-se de estar dentro da pasta `desafio1`. Além disso, para quem for executar em ambiente `Windows` pode acontecer do formato do arquivo `start.sh` **não** estar em **LF**, você pode verificar e alterar isso dentro do arquivo no canto inferior direito.
 
 1. Criar rede docker. Para essa etapa foi usado o nome `minha-rede-desafio1`.
 ```bash
