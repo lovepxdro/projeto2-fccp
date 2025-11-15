@@ -4,6 +4,7 @@ O objetivo deste desafio é criar dois containers Docker que se comunicam atrav�
 
 ## Arquitetura e decisões técnicas
 
+```text
 /desafio1
 ├── /cliente
 │   ├── Dockerfile
@@ -13,6 +14,7 @@ O objetivo deste desafio é criar dois containers Docker que se comunicam atrav�
 │   ├── Dockerfile
 │   └── requirements.txt
 └── README.md
+```
 
 A solução foi dividida em dois serviços independentes, cada um com seu próprio `Dockerfile`.
 
@@ -21,7 +23,7 @@ A solução foi dividida em dois serviços independentes, cada um com seu própr
 2. O cliente é uma imagem `alpine` (extremamente leve) com `curl` instalado. Ele utiliza um script `start.sh` para rodar um loop infinito. A cada 3 segundos, ele faz uma requisição `curl` para o `servidor-app` na porta 8080. A escolha de usar um script em `.sh` ao invés de `.py` baseou-se na pouca complexidade da tarefa (rodar `curl` em loop). O `Dockerfile` apenas instala o `curl`, copia o script e o executa.
 
 3. Foi utilizada uma rede do tipo `bridge` customizada. Em vez de usar a rede `default` do Docker, criar uma rede nomeada é crucial. Isso ativa o **DNS interno do Docker**, permitindo que o container "Cliente" encontre o container "Servidor" simplesmente pelo seu nome (`servidor-app`), sem precisar saber o seu endereço IP.
-> OBS: Esta foi uma sugestão recomendada por IA.
+> OBS: Esta sugestão foi uma recomendação dada por IA.
 
 ## Como executar
 
