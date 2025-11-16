@@ -69,7 +69,7 @@ INSERT INTO usuarios (nome) VALUES ('Pedro');
 ```sql
 SELECT * FROM usuarios;
 ```
-![provaA](desafio2\screenshots\A.png)
+![provaA](desafio2/screenshots/A.png)
 
 Para sair do shell psql digite `\q`.
 
@@ -100,7 +100,7 @@ docker exec -it postgres-container-B psql -U postgres
 ```sql
 SELECT * FROM usuarios;
 ```
-![provaB](desafio2\screenshots\B.png)
+![provaB](desafio2/screenshots/B.png)
 
 Lembre que o comando para sair desse shell é `\q`.
 
