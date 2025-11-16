@@ -18,7 +18,6 @@ O teste principal consiste em:
 ```
 
 Para este desafio não é necessário desenvolver uma aplicação, apenas provar que os dados devem viver de forma independente do container, e isso pode ser feito usando a imagem do `postgres` direto do docker.
-> OBS: Esta sugestão foi uma recomendação feita por IA.
 
 1. Em vez de mapear uma pasta do host, usamos um **volume nomeado**. A imagem do PostgreSQL armazena todos os seus dados no diretório `/var/lib/postgresql/data` dentro do container. Mapeamos nosso volume nomeado para esse *path* exato.
 
