@@ -1,0 +1,22 @@
+version: '3.8'
+
+services:
+  
+  # 1. Microsserviço A (Usuários)
+  # Este serviço será chamado internamente pelo nome 'servico-a'
+  servico-a:
+    build: ./servico-a-usuarios
+    # Não precisa de 'ports', pois só o 'servico-b' o acessa pela rede interna
+
+  # 2. Microsserviço B (Processador)
+  servico-b:
+    build: ./servico-b-processador
+    ports:
+      # Expõe a porta 5002 para testarmos no navegador
+      - "5002:5002"
+    environment:
+      # Passa a URL do 'servico-a' para o app.py do Serviço B
+      - USER_API_URL=http://servico-a:5001/users
+    depends_on:
+      # Garante que o 'servico-a' inicie antes do 'servico-b'
+      - servico-a
