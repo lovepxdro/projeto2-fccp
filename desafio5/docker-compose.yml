@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  users_service:
+    build: ./users
+  
+  orders_service:
+    build: ./orders
+
+  api_gateway:
+    build: ./gateway
+    ports:
+      - "4000:80"
+    depends_on:
+      - users_service
+      - orders_service
