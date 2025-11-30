@@ -4,7 +4,7 @@ O objetivo do projeto é praticar fundamentos de docker e arquitetura em micross
 
 ## Estrutura
 
-Conforme os requisitos, a estrutura do repositório é dividada em 5 pastas, uma para cada desfio. Cada pasta possui sua prórpia estrutura e seu próprio `readme`.
+Conforme os requisitos, a estrutura do repositório é dividada em 5 pastas, uma para cada desafio. Cada pasta possui sua prórpia estrutura e seu próprio `readme` (incluindo as instruções de como executar e a explicação do código).
 
 ```text
 projeto2-fccp\
@@ -17,3 +17,5 @@ projeto2-fccp\
 ├── LICENSE
 └── README.md
 ```
+
+> **OBS:** É necessário entrar na raiz de cada desafio para poder executar ele.

@@ -24,7 +24,6 @@ A solução foi dividida em dois serviços independentes, cada um com seu própr
 > OBS: Esta sugestão foi uma recomendação feita por IA.
 
 3. Foi utilizada uma rede do tipo `bridge` customizada. Em vez de usar a rede `default` do Docker, criar uma rede nomeada é crucial. Isso ativa o **DNS interno do Docker**, permitindo que o container "Cliente" encontre o container "Servidor" simplesmente pelo seu nome (`servidor-app`), sem precisar saber o seu endereço IP.
-> OBS: Esta sugestão foi uma recomendação feita por IA.
 
 ## Como executar
 

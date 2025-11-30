@@ -41,4 +41,6 @@ O API Gateway utiliza Nginx para escutar na porta interna 80, roteando /users pa
     * **Gateway Status**: [http://localhost:4000/](http://localhost:4000/)
 
 3.  Encerrar (Lembre de digitar ``CTRL + C`` para sair do terminal docker):
-    `docker-compose down`
+     ```bash
+    docker-compose down
+    ```

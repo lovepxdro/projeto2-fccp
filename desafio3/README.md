@@ -12,17 +12,17 @@ O Docker Compose é responsável por criar a rede interna, subir os serviços na
 
 ```text
 /desafio3
-├── /web                  (Código-fonte do serviço 'web')
-│   ├── app.py            (App Flask que conecta no DB e Cache)
-│   ├── Dockerfile        (Instruções para buildar o 'web')
-│   └── requirements.txt  (Flask, psycopg2-binary, redis)
-├── docker-compose.yml    (O "maestro" da orquestração)
+├── /web
+│   ├── app.py
+│   ├── Dockerfile
+│   └── requirements.txt
+├── docker-compose.yml
 └── README.md
 ```
 
 ## Como executar
 
-Como esse desafio possui um `docker-compose` a execução é simplificada. Mas antes, certifique-se de estar dentro da pasta do desafio.
+Como esse desafio possui um `docker-compose` a execução é simplificada.
 
 1. Subir a aplicação.
 
